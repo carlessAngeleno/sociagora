@@ -14,8 +14,7 @@ html, body {
 }
 
 #canvas {
-  width: 1080px;
-  height: 800px;
+  width: 100%;
   position: float;
   float: left;
   border-style: solid;

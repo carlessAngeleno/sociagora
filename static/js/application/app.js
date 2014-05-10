@@ -1,8 +1,8 @@
 
 // modified from http://bl.ocks.org/mbostock/4062045
 function drawFDG(parentSel) {    
-  var width = 1080,    
-    height = 800;   
+  var width = $(parentSel).width(),    
+    height = width * 0.74;   
 
   var color = d3.scale.category20();
 
@@ -76,6 +76,14 @@ function drawFDG(parentSel) {
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
     }); 
   });
+
+  window.onresize = resizeSVG;
+
+  function resizeSVG(){
+    var width = $(parentSel).width(),    
+        height = width * 0.74;   
+    svg.attr("width", width).attr("height", height);
+  } 
 }
 
 $(document).ready(function(){
