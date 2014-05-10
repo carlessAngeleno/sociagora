@@ -108,8 +108,6 @@ button.ca_button_large, button.ca_button_large:hover {
     text-align:center;
 }
 
-
-/* application */
 .ca_section {
   margin: 6px;
   padding: 30px;
@@ -128,20 +126,6 @@ body {
 .tab-content {
   overflow: visible;
   min-height: 380px;
-}
-
-#image_form, #web_form {
-  margin: 10px;
-  padding: 20px;
-}
-
-#image_form, #web_form {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#link_input {
-  max-width: 220px;
 }
 
 .nav-pills>.active>a, .nav-pills>.active>a:hover {
