@@ -41,11 +41,12 @@ function drawFDG(parentSel) {
       //.attr("r", function(d) {return 8; })
       .style("fill", function(d) { 
        if (d.group === 1)
-        col = "1f77b4";
+        col = "#1f77b4";
        if (d.group === 2)
-        col = "d62728";
+        col = "#d62728";
        if (d.group === 3)
-        col = "2ca02c";        
+        col = "#2ca02c";  
+            
        return col;
        //return color(d.group); 
       });
